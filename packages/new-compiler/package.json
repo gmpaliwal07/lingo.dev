@@ -117,8 +117,8 @@
     "build"
   ],
   "scripts": {
-    "dev": "tsdown --watch",
-    "build": "pnpm typecheck && tsdown",
+    "dev": "node init && tsdown --watch",
+    "build": "node init && pnpm typecheck && tsdown",
     "typecheck": "tsc --noEmit",
     "clean": "rm -rf build",
     "test": "vitest --run",

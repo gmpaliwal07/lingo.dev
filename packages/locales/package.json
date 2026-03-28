@@ -22,8 +22,8 @@
     "localenames-data"
   ],
   "scripts": {
-    "dev": "tsup --watch",
-    "build": "pnpm typecheck && tsup",
+    "dev": "node init && tsup --watch",
+    "build": "node init && pnpm typecheck && tsup",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest"

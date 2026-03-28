@@ -1,6 +1,6 @@
 {
   "name": "@lingo.dev/_compiler",
-  "version": "0.12.0",
+  "version": "0.12.1",
   "description": "Lingo.dev Compiler",
   "private": false,
   "repository": {
@@ -28,8 +28,8 @@
     "build"
   ],
   "scripts": {
-    "dev": "tsup --watch",
-    "build": "pnpm typecheck && tsup",
+    "dev": "node init && tsup --watch",
+    "build": "node init && pnpm typecheck && tsup",
     "typecheck": "tsc --noEmit",
     "clean": "rm -rf build",
     "test": "vitest --run",

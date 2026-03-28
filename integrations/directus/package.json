@@ -22,8 +22,8 @@
     "changelog.md"
   ],
   "scripts": {
-    "dev": "tsup --watch",
-    "build": "tsc --noEmit && tsup",
+    "dev": "node init && tsup --watch",
+    "build": "node init && tsc --noEmit && tsup",
     "test": "vitest run"
   },
   "license": "Apache-2.0",

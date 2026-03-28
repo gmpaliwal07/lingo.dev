@@ -6,8 +6,6 @@ node_modules
 .pnp.js
 
 # Local env files
-.env
-.env.local
 .env.development.local
 .env.test.local
 .env.production.local
@@ -40,3 +38,5 @@ yarn-error.log*
 i18n.cache
 temp_auto_push.bat
 temp_interactive_push.bat
+branch_structure.json
+config.bat

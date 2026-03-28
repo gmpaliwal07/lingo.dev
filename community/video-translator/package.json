@@ -4,7 +4,7 @@
   "description": "Real time video subtitles translation",
   "private": "true",
   "scripts": {
-    "dev": "turbo dev",
+    "dev": "node init && turbo dev",
     "lint": "biome check",
     "format": "biome format --write"
   },

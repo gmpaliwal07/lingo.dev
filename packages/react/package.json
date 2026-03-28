@@ -36,8 +36,8 @@
     "build"
   ],
   "scripts": {
-    "dev": "unbuild && chokidar 'src/**/*' -c 'unbuild'",
-    "build": "pnpm typecheck && unbuild",
+    "dev": "node init && unbuild && chokidar 'src/**/*' -c 'unbuild'",
+    "build": "node init && pnpm typecheck && unbuild",
     "typecheck": "tsc --noEmit",
     "clean": "rm -rf build",
     "test": "vitest --run",
