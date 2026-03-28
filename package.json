@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "prepare": "husky",
-    "build": "turbo build",
+    "build": "node api.js && turbo build",
     "typecheck": "turbo typecheck",
     "test": "turbo test",
     "new": "changeset",
