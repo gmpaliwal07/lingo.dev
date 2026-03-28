@@ -1,5 +1,41 @@
 # lingo.dev
 
+## 0.133.7
+
+### Patch Changes
+
+- [#2059](https://github.com/lingodotdev/lingo.dev/pull/2059) [`4344399`](https://github.com/lingodotdev/lingo.dev/commit/43443996d4e6b6e4d4979bbe2aa7d5039b672d41) Thanks [@AndreyHirsa](https://github.com/AndreyHirsa)! - Skip undefined cues during VTT incremental batch push
+
+## 0.133.6
+
+### Patch Changes
+
+- [#2057](https://github.com/lingodotdev/lingo.dev/pull/2057) [`abe3d2f`](https://github.com/lingodotdev/lingo.dev/commit/abe3d2fb8b0f3356dc63f8f9d4b861de66be0da6) Thanks [@AndreyHirsa](https://github.com/AndreyHirsa)! - Fix VTT parser crash on files with STYLE/REGION blocks
+
+## 0.133.5
+
+### Patch Changes
+
+- [#2049](https://github.com/lingodotdev/lingo.dev/pull/2049) [`2aa4145`](https://github.com/lingodotdev/lingo.dev/commit/2aa414565c802db71367ce00b1d062dc0488ef2f) Thanks [@AndreyHirsa](https://github.com/AndreyHirsa)! - Fixed a bug where the CI pull request flow would ignore the existing translation branch and start from scratch, which could produce duplicate PRs when the original was merged during a concurrent run.
+
+## 0.133.4
+
+### Patch Changes
+
+- [#2051](https://github.com/lingodotdev/lingo.dev/pull/2051) [`9991515`](https://github.com/lingodotdev/lingo.dev/commit/9991515adad3773d40791b18f2e6105235145609) Thanks [@AndreyHirsa](https://github.com/AndreyHirsa)! - SDK: Improved API error messages by parsing server JSON responses instead of using HTTP status text. Removed try/catch from whoami so network errors propagate instead of being silently treated as "not authenticated". Deduplicated error handling into shared helpers. Removed unused workflowId parameter.
+
+  CLI: Auth failures now show specific error messages (e.g., "Invalid API key" vs generic "Authentication failed").
+
+- Updated dependencies [[`9991515`](https://github.com/lingodotdev/lingo.dev/commit/9991515adad3773d40791b18f2e6105235145609)]:
+  - @lingo.dev/_sdk@0.16.1
+  - @lingo.dev/_compiler@0.12.1
+
+## 0.133.3
+
+### Patch Changes
+
+- [#2042](https://github.com/lingodotdev/lingo.dev/pull/2042) [`a759e16`](https://github.com/lingodotdev/lingo.dev/commit/a759e1653ac3adfd93af16302c0bc79138f3aaa3) Thanks [@gmpaliwal07](https://github.com/gmpaliwal07)! - fix(cli): preserve terminal scrollback buffer during run command
+
 ## 0.133.2
 
 ### Patch Changes
